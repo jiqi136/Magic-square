@@ -1,4 +1,4 @@
-# Magic-square
+# Infinite Numerical Magic Square 
 
 # Introduction to Magic Squares
 
