@@ -8,16 +8,8 @@ Magic squares are ancient mathematical puzzles full of charm. Below is a detaile
 A Magic Square is an n×n square matrix composed of distinct numbers that satisfies:
 - The sum of numbers in each row and column is equal  
 - The sum of numbers in both main diagonals is also equal  
-- Typically uses consecutive natural numbers from 1 to n² (some variations may allow repeated numbers)
 
-## 2. Key Concepts
-### Magic Constant
-The common sum of each row/column/diagonal. Calculation formula:  
-`Magic Constant = n(n² + 1)/2`  
-- 3×3 Magic Square: Magic Constant = 15  
-- 4×4 Magic Square: Magic Constant = 34  
-
-### Classification by Order
+## 2.  Classification by Order
 1. **Odd-order** (e.g., 3×3, 5×5)  
 2. **Doubly even-order** (4×4, 8×8, i.e., multiples of 4)  
 3. **Singly even-order** (6×6, 10×10, i.e., even numbers not multiples of 4)
