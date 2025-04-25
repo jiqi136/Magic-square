@@ -32,25 +32,25 @@ Program download address：[https://github.com/jiqi136/Magic-square/releases/dow
 ### Step-by-step explanation for creating a 5x5 odd-order magic square:
 #### Table: A-Single  
 Fill number 1 in the first cell of the top row, then fill increasing odd numbers spaced apart until reaching the square number 25.  
-picture
 
 #### Table: B-Dual  
 Fill number 2 in the last cell of the bottom row, then fill increasing even numbers spaced apart until reaching 24 (square number minus one).  
-picture
+  ![B4-2](https://sourceforge.net/u/jier136/code/ci/main/tree/%E5%A5%87%E9%98%B6%E8%A7%A3%E8%AF%B4-2.png?format=raw )
 
 #### Table: C-Spaced  
 Insert blank rows and columns between each existing row and column.  
-picture
+
 
 #### Table: D-Shift  
 1. Connect the midpoints of the four edges to form a diamond-shaped frame.  
 2. Numbers outside the diamond frame are folded into the frame along the diagonal axis like paper folding.  
-pictureA
-pictureB
+ ![B4-3](https://sourceforge.net/u/jier136/code/ci/main/tree/%E5%A5%87%E9%98%B6%E8%A7%A3%E8%AF%B4-3.png?format=raw)
+![B4-4B](https://sourceforge.net/u/jier136/code/ci/main/tree/%E5%A5%87%E9%98%B6%E8%A7%A3%E8%AF%B4-4B.png?format=raw )
+
 
 #### Table: E-Merged  
 Rotate the diamond frame 45 degrees to align, then copy the numbers within the frame to a new table.  
-picture
+ ![B4-5](https://sourceforge.net/u/jier136/code/ci/main/tree/%E5%A5%87%E9%98%B6%E8%A7%A3%E8%AF%B4-5.png?format=raw )
 
 **Complete**: Batch verify sum values using 'Auto Sum' in the 'Home' tab at the top right of the xls sheet.
 
@@ -65,37 +65,46 @@ Program download address：[https://github.com/jiqi136/Magic-square/releases/dow
 ### Step-by-step explanation for creating a 6x6 singly even magic square:
 #### Table:A-Half 3  
 Introduce the creation of a single even 6 divided by 2 to form a 3 magic square.  
-picture
+
 
 #### Table:B-4x Minus 3  
 Multiply each value of the 3 magic square by 4 and subtract 3.  
-picture
+   ![2](https://sourceforge.net/u/jier136/code/ci/main/tree/%E5%8D%95%E5%81%B6%E8%A7%A3%E8%AF%B4-2.png?format=raw)
+
 
 #### Table:C-Split Table  
 Split the 3 magic square into Table A and Table B with alternating values.  
-picture
+  ![3](https://sourceforge.net/u/jier136/code/ci/main/tree/%E5%8D%95%E5%81%B6%E8%A7%A3%E8%AF%B4-3.png?format=raw)
+
+
 
 #### Table:D-Forward Order  
 Expand each value in Table A with 4 adjacent numbers to form sub-squares.  
 Increment by 1 in forward order: sub-square top row `[n+0, n+1]`, bottom row `[n+2, n+3]`.  
-picture
+ ![4](https://sourceforge.net/u/jier136/code/ci/main/tree/%E5%8D%95%E5%81%B6%E8%A7%A3%E8%AF%B4-3A.png?format=raw)
+
+
 
 #### Table:E-Reverse Order  
 Decrement by 1 in reverse order: sub-square top row `[n+3, n+2]`, bottom row `[n+1, n+0]`.  
-pictureA
-pictureB
+![5](https://sourceforge.net/u/jier136/code/ci/main/tree/%E5%8D%95%E5%81%B6%E8%A7%A3%E8%AF%B4-4A.png?format=raw)
+
+![5B](https://sourceforge.net/u/jier136/code/ci/main/tree/%E5%8D%95%E5%81%B6%E8%A7%A3%E8%AF%B4-4C.png?format=raw)
 
 #### Table:F-Adjust  
 1. Swap left-right in first row's sub-squares, ignoring last corner.  
 2. Swap top-bottom in last column's sub-squares, ignoring last corner.  
 3. Swap left-right in bottom-right corner of last row.  
 4. Swap top-bottom in bottom-left corner of first column.  
-pictureA
-pictureB
-pictureC
+![6](https://sourceforge.net/u/jier136/code/ci/main/tree/%E5%8D%95%E5%81%B6%E8%A7%A3%E8%AF%B4-5A.png?format=raw)
+
+![6a](https://sourceforge.net/u/jier136/code/ci/main/tree/%E5%8D%95%E5%81%B6%E8%A7%A3%E8%AF%B4-5B.png?format=raw )
+
+![6b](https://sourceforge.net/u/jier136/code/ci/main/tree/%E5%8D%95%E5%81%B6%E8%A7%A3%E8%AF%B4-5C.png?format=raw)
 
 **Complete**: Batch verify sum values using 'Auto Sum' in the 'Home' tab at the top right of the xls sheet.  
-picture
+![7](https://sourceforge.net/u/jier136/code/ci/main/tree/%E5%8D%95%E5%81%B6%E8%A7%A3%E8%AF%B4-6.png?format=raw)
+
 
 ---
 
@@ -109,22 +118,30 @@ Program download address：[https://github.com/jiqi136/Magic-square/releases/dow
 ### Step-by-step explanation for creating an 8x8 doubly even magic square:
 #### Table:A-Single  
 Introducing the creation of a doubly even 8 magic square divided by 2 into 4 magic squares.  
-picture
 
 #### Table:B-4x Minus 3  
 Each value of the 4 magic square is multiplied by 4 and then subtracted by 3.  
-picture
+ ![2](https://sourceforge.net/u/jier136/code/ci/main/tree/%E5%8F%8C%E5%81%B6%E8%A7%A3%E8%AF%B4-2.png?format=raw)
+
+
 
 #### Table:C-Upper Section  
 Expand each value into 4 adjacent numbers:  
 Top row `[n+0, n+3]`, bottom row `[n+2, n+1]`.  
 Example with n=1: Small square's top row `[1, 4]`, bottom row `[3, 2]`.  
-picture
+  ![3](https://sourceforge.net/u/jier136/code/ci/main/tree/%E5%8F%8C%E5%81%B6%E8%A7%A3%E8%AF%B4-3.png?format=raw )
+
 
 #### Table:D-Lower Section  
 Expansion method for the lower section:  
 Top row `[n+3, n+0]`, bottom row `[n+1, n+2]`.  
-picture
+
+![4](https://sourceforge.net/u/jier136/code/ci/main/tree/%E5%8F%8C%E5%81%B6%E8%A7%A3%E8%AF%B4-4.png?format=raw)
+
+
 
 **Complete**: Batch verify sum values using 'Auto Sum' in the 'Home' tab at the top right of the xls sheet.  
-picture
+
+![5](https://sourceforge.net/u/jier136/code/ci/main/tree/%E5%8F%8C%E5%81%B6%E8%A7%A3%E8%AF%B4-5.png?format=raw)
+   
+
